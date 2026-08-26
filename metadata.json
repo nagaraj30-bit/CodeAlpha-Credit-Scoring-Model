@@ -1,0 +1,6 @@
+{
+  "name": "Credit Scoring Model",
+  "description": "Human-centered Machine Learning application for credit scoring and explainable credit risk assessment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

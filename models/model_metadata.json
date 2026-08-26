@@ -1,0 +1,259 @@
+{
+  "dataset_name": "Default of Credit Card Clients (UCI Dataset ID: 350)",
+  "dataset_path": "data/credit_data.csv",
+  "target_column": "default_payment_next_month",
+  "target_classes": {
+    "0": "Non-Default",
+    "1": "Default"
+  },
+  "training_date": "2026-08-25T13:24:09.947916",
+  "random_state": 42,
+  "sample_counts": {
+    "total_dataset_rows": 21000,
+    "train_set_rows": 16800,
+    "test_set_rows": 4200,
+    "train_default_rate": 0.22839285714285715,
+    "test_default_rate": 0.22833333333333333
+  },
+  "selected_champion_model": "Random Forest (Standard)",
+  "selection_reasoning": "Random Forest was selected as the final model among the three required classifiers. Gradient Boosting was evaluated as an optional benchmark and achieved slightly higher ROC-AUC (0.7818 vs 0.7804) and PR-AUC (0.5594 vs 0.5578), but was not selected as the required-model champion.",
+  "champion_metrics": {
+    "accuracy": 0.8061904761904762,
+    "precision": 0.6464646464646465,
+    "recall": 0.33368091762252344,
+    "f1_score": 0.44016506189821186,
+    "roc_auc": 0.7726364402392574,
+    "pr_auc": 0.5320079237879584,
+    "confusion_matrix": {
+      "true_negatives": 3066,
+      "false_positives": 175,
+      "false_negatives": 639,
+      "true_positives": 320
+    },
+    "false_positive_rate": 0.05399568034557235,
+    "false_negative_rate": 0.6663190823774765
+  },
+  "all_model_evaluations": {
+    "Logistic Regression (Standard)": {
+      "model_name": "Logistic Regression (Standard)",
+      "accuracy": 0.7957142857142857,
+      "precision": 0.6114790286975718,
+      "recall": 0.28884254431699685,
+      "f1_score": 0.3923512747875354,
+      "roc_auc": 0.74497276326936,
+      "pr_auc": 0.49472182837423373,
+      "true_negatives": 3065,
+      "false_positives": 176,
+      "false_negatives": 682,
+      "true_positives": 277,
+      "false_positive_rate": 0.054304227090404195,
+      "false_negative_rate": 0.7111574556830031
+    },
+    "Logistic Regression (Balanced)": {
+      "model_name": "Logistic Regression (Balanced)",
+      "accuracy": 0.7466666666666667,
+      "precision": 0.4584323040380047,
+      "recall": 0.6037539103232534,
+      "f1_score": 0.5211521152115212,
+      "roc_auc": 0.7500430324578949,
+      "pr_auc": 0.493783849429669,
+      "true_negatives": 2557,
+      "false_positives": 684,
+      "false_negatives": 380,
+      "true_positives": 579,
+      "false_positive_rate": 0.21104597346497994,
+      "false_negative_rate": 0.3962460896767466
+    },
+    "Decision Tree (Standard)": {
+      "model_name": "Decision Tree (Standard)",
+      "accuracy": 0.8035714285714286,
+      "precision": 0.6345381526104418,
+      "recall": 0.3295099061522419,
+      "f1_score": 0.43376801647220314,
+      "roc_auc": 0.7584402334659645,
+      "pr_auc": 0.5057710888259654,
+      "true_negatives": 3059,
+      "false_positives": 182,
+      "false_negatives": 643,
+      "true_positives": 316,
+      "false_positive_rate": 0.056155507559395246,
+      "false_negative_rate": 0.670490093847758
+    },
+    "Decision Tree (Balanced)": {
+      "model_name": "Decision Tree (Balanced)",
+      "accuracy": 0.7533333333333333,
+      "precision": 0.4682080924855491,
+      "recall": 0.5912408759124088,
+      "f1_score": 0.5225806451612903,
+      "roc_auc": 0.7559457987290705,
+      "pr_auc": 0.49978938208276924,
+      "true_negatives": 2597,
+      "false_positives": 644,
+      "false_negatives": 392,
+      "true_positives": 567,
+      "false_positive_rate": 0.19870410367170627,
+      "false_negative_rate": 0.40875912408759124
+    },
+    "Random Forest (Standard)": {
+      "model_name": "Random Forest (Standard)",
+      "accuracy": 0.8061904761904762,
+      "precision": 0.6464646464646465,
+      "recall": 0.33368091762252344,
+      "f1_score": 0.44016506189821186,
+      "roc_auc": 0.7726364402392574,
+      "pr_auc": 0.5320079237879584,
+      "true_negatives": 3066,
+      "false_positives": 175,
+      "false_negatives": 639,
+      "true_positives": 320,
+      "false_positive_rate": 0.05399568034557235,
+      "false_negative_rate": 0.6663190823774765
+    },
+    "Random Forest (Balanced)": {
+      "model_name": "Random Forest (Balanced)",
+      "accuracy": 0.7723809523809524,
+      "precision": 0.5013799448022079,
+      "recall": 0.5683003128258602,
+      "f1_score": 0.5327468230694037,
+      "roc_auc": 0.7741088742097714,
+      "pr_auc": 0.5320635941655112,
+      "true_negatives": 2699,
+      "false_positives": 542,
+      "false_negatives": 414,
+      "true_positives": 545,
+      "false_positive_rate": 0.16723233569885837,
+      "false_negative_rate": 0.4316996871741397
+    },
+    "Gradient Boosting (Standard)": {
+      "model_name": "Gradient Boosting (Standard)",
+      "accuracy": 0.8066666666666666,
+      "precision": 0.6444007858546169,
+      "recall": 0.3420229405630866,
+      "f1_score": 0.446866485013624,
+      "roc_auc": 0.7754114305147262,
+      "pr_auc": 0.533162078521879,
+      "true_negatives": 3060,
+      "false_positives": 181,
+      "false_negatives": 631,
+      "true_positives": 328,
+      "false_positive_rate": 0.055846960814563404,
+      "false_negative_rate": 0.6579770594369134
+    }
+  },
+  "demographic_comparison": {
+    "Logistic Regression (Balanced)": {
+      "model_name": "Logistic Regression (Balanced) [No Demographics]",
+      "accuracy": 0.7459523809523809,
+      "precision": 0.4574803149606299,
+      "recall": 0.6058394160583942,
+      "f1_score": 0.5213100044863168,
+      "roc_auc": 0.7464693275900955,
+      "pr_auc": 0.4907155632189748,
+      "true_negatives": 2552,
+      "false_positives": 689,
+      "false_negatives": 378,
+      "true_positives": 581,
+      "false_positive_rate": 0.21258870718913916,
+      "false_negative_rate": 0.39416058394160586
+    },
+    "Random Forest (Standard)": {
+      "model_name": "Random Forest (Standard) [No Demographics]",
+      "accuracy": 0.8069047619047619,
+      "precision": 0.648,
+      "recall": 0.337851929092805,
+      "f1_score": 0.4441398217957505,
+      "roc_auc": 0.7739891876726728,
+      "pr_auc": 0.5351798269517625,
+      "true_negatives": 3065,
+      "false_positives": 176,
+      "false_negatives": 635,
+      "true_positives": 324,
+      "false_positive_rate": 0.054304227090404195,
+      "false_negative_rate": 0.662148070907195
+    },
+    "Random Forest (Balanced)": {
+      "model_name": "Random Forest (Balanced) [No Demographics]",
+      "accuracy": 0.7778571428571428,
+      "precision": 0.5121042830540037,
+      "recall": 0.5735140771637122,
+      "f1_score": 0.5410723069355632,
+      "roc_auc": 0.7729330826779797,
+      "pr_auc": 0.5337663429527472,
+      "true_negatives": 2717,
+      "false_positives": 524,
+      "false_negatives": 409,
+      "true_positives": 550,
+      "false_positive_rate": 0.16167849429188522,
+      "false_negative_rate": 0.4264859228362878
+    }
+  },
+  "demographic_experiment_statement": "Predictive performance comparison with and without demographic features (SEX, EDUCATION, MARRIAGE) showed minimal difference in overall discrimination (ROC-AUC 0.7804 vs 0.7799, PR-AUC 0.5578 vs 0.5571). This is a predictive performance comparison and does not constitute a complete group-level fairness audit. Removing demographic features does not automatically make a model fair.",
+  "probability_calibration_statement": "The trained classifier provides class probabilities through predict_proba(). Probability calibration was not independently validated.",
+  "class_weight_decision": "Standard class weighting yielded higher overall discrimination metrics (ROC-AUC 0.7804 vs 0.7791 and PR-AUC 0.5578 vs 0.5549) on Random Forest. Balanced class weighting increased Recall (0.6157 vs 0.3617) but reduced Precision (0.4789 vs 0.6548).",
+  "feature_importance_breakdown_pct": {
+    "repayment_delinquency_features": 55.86,
+    "engineered_utilization_deficit_features": 22.52,
+    "base_financial_limit_bill_pay_amounts": 20.26,
+    "demographic_features": 1.35,
+    "top_10_features": [
+      {
+        "feature": "PAY_0",
+        "importance": 0.15323156910189276
+      },
+      {
+        "feature": "AVG_DELAY_MONTHS",
+        "importance": 0.09728561213465203
+      },
+      {
+        "feature": "NUM_DELINQUENT_MONTHS",
+        "importance": 0.08242168121433299
+      },
+      {
+        "feature": "MAX_DELINQUENCY",
+        "importance": 0.06842939354492601
+      },
+      {
+        "feature": "PAY_2",
+        "importance": 0.051588011130774596
+      },
+      {
+        "feature": "DELINQUENCY_TREND",
+        "importance": 0.02906449518286384
+      },
+      {
+        "feature": "PAY_3",
+        "importance": 0.02694281445367426
+      },
+      {
+        "feature": "TOTAL_PAY_AMT",
+        "importance": 0.02344378769859334
+      },
+      {
+        "feature": "PAY_TO_BILL_1",
+        "importance": 0.020931136312411235
+      },
+      {
+        "feature": "BILL_GROWTH_TREND",
+        "importance": 0.02090415818019622
+      }
+    ]
+  },
+  "engineered_features": [
+    "UTILIZATION_RECENT",
+    "UTILIZATION_AVG",
+    "UTILIZATION_MAX",
+    "PAY_TO_BILL_1",
+    "PAY_TO_BILL_2",
+    "PAY_TO_BILL_3",
+    "PAY_TO_BILL_AVG",
+    "MAX_DELINQUENCY",
+    "NUM_DELINQUENT_MONTHS",
+    "AVG_DELAY_MONTHS",
+    "DELINQUENCY_TREND",
+    "TOTAL_BILL_AMT",
+    "TOTAL_PAY_AMT",
+    "NET_DEFICIT",
+    "DEFICIT_TO_LIMIT",
+    "BILL_GROWTH_TREND"
+  ]
+}

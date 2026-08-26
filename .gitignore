@@ -1,0 +1,25 @@
+# Node
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+
+# Environment
+.env*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Data
+data/*.xls
+data/*.xlsx
+
+# Model artifacts
+*.pkl
