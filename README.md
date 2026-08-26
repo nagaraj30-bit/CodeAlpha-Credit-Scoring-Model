@@ -175,3 +175,10 @@ pytest -v
 - `tests/test_i18n.py`: Internationalization, language switching, unicode safety, prediction invariance, and translation completeness (9 tests).
 - **Total**: 60 unit & integration tests passing (100% green).
 
+Run the project locally:
+
+npm install
+npm run dev -- --host 0.0.0.0 --port 3000
+
+Then open:
+http://localhost:3000
